@@ -13,7 +13,15 @@ LABEL maintainer="UC San Diego ITS/ETS <ets-consult@ucsd.edu>"
 # 2) change to root to install packages
 USER root
 
-RUN apt-get -y install htop libopenexr-dev 
+RUN apt-get update && apt-get install -y \
+    htop \
+    libopenexr-dev \
+    python3 python-dev python3-dev \
+    libtbb-dev \
+    libjpeg-dev \
+    build-essential libssl-dev libffi-dev \
+    libxml2-dev libxslt1-dev zlib1g-dev \
+    openexr \
 
 # 3) install packages using notebook user
 USER jovyan
