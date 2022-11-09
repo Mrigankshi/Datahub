@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y \
     libjpeg-dev \
     build-essential libssl-dev libffi-dev \
     libxml2-dev libxslt1-dev zlib1g-dev \
-    openexr \
+    openexr
 
 # 3) install packages using notebook user
 USER jovyan
