@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install -y \
     htop \
     libopenexr-dev \
     python3 python-dev python3-dev \
+    zlib1g zlib1g-dev libssl-dev libbz2-dev libsqlite3-dev\
     openexr
 
 # 3) install packages using notebook user
